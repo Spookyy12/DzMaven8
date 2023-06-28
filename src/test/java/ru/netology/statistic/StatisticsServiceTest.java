@@ -19,4 +19,12 @@ public class StatisticsServiceTest {
         System.out.println(actual);
     }
 
+    @Test
+    void findMaxIfArrSameNumbers() {
+        StatisticsService service = new StatisticsService();
+
+        long expected = 77;
+        long actual = service.findMax(new long[]{44, 12, 15, 77});
+        Assertions.assertEquals(expected, actual);
+    }
 }
